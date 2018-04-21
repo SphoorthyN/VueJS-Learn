@@ -1,0 +1,194 @@
+$backColor: rgba(0, 102, 102, 1)
+$textColor: rgb(255, 255, 255)
+$blogColor: rgba(51, 153, 153, 1)
+$inActiveColor: rgba(0, 102, 102, 1)
+$hoverColor: rgba(102, 153, 153, 1)
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400')
+
+html
+    height: 100%
+    box-sizing: border-box
+    body
+        height: 100%
+        padding: 0
+        margin: 0
+        font-family: "Montserrat Alternates", sans-serif
+        font-weight: 300
+        color: $textColor
+        ::-webkit-scrollbar
+            width: 5px
+            height: 100px
+            direction: rtl
+        ::-webkit-scrollbar-thumb
+            background: white
+        #blog
+            width: 100%
+            height: 100%
+            .Background
+                width: 100%
+                height: 100%
+                display: flex
+                .Side-Bar
+                    //width: 100%
+                    background: $blogColor
+                    display: flex
+                    flex-direction: column
+                    .Heading
+                        background: $backColor
+                        flex: 1
+                        font-size: 30px
+                        display: flex
+                        justify-content: center
+                        padding-right: 15px
+                        min-width: 250px
+                        flex-direction: column
+                        .HeadingStuff
+                            display: flex
+                            align-items: flex-end
+                            flex-direction: column
+
+                    .list
+                        flex: 4
+                        width: 100%
+                        background: $blogColor
+                        .right
+                            display: flex
+                            overflow: auto
+                            flex-direction: column
+                            width: 100%
+                            background: $blogColor
+                            margin: 5px 0
+                            .blog-tab
+                                min-height: fit-content
+                                margin-bottom: 1px
+                                //flex: 1
+                                background: $backColor
+                                box-sizing: border-box
+                                display: flex
+                                flex-direction: column
+                                align-items: flex-end
+                                padding: 15px 0
+                                justify-content: space-around
+                                .Blog
+                                    display: flex
+                                    width: 100%
+                                    height: 100%
+                                    .title
+                                        font-size: 1em
+                                        flex-wrap: wrap
+                                        display: flex
+                                        align-self: flex-start
+                                    //padding-left: 20px
+                                    //padding-bottom: 5px
+                                    .author
+                                        font-size: .8em
+
+                .Blog-Box
+                    background: $blogColor
+                    display: flex
+                    overflow: auto
+                    .container
+                        display: flex
+                        flex-direction: column
+                        .Blog-Title
+                            font-size: 2em
+                            margin: 30px 0
+                        .Blog-Text-Container
+                            display: flex
+                            overflow: auto
+                            padding-right: 50px
+                            .Blog-Text
+                                font-size: 1em
+                                display: flex
+
+//                .Side-Bar
+//                    width: 250px
+//                    display: flex
+//                    flex-direction: column
+//                    min-height: 0
+//                    box-sizing: border-box
+//                    .Heading
+//                        height: 150px
+//                        padding-right: 20px
+//                        display: flex
+//                        flex-direction: column
+//                        justify-content: center
+//                        align-items: flex-end
+//                        .Name
+//                            font-size: 1.8em
+//                            //line-height: 33px
+//                            color: $textColor
+//                        .Blog
+//                            font-size: 1.8em
+//                            color: $textColor
+//                    .list
+//                        display: flex
+//                        //direction: rtl
+//                        flex-direction: column
+//                        .right
+//                            width: 100%
+//                            min-height: 100%
+//                            display: flex
+//                            overflow: auto
+//                            flex-direction: column
+//                            .blog-tab
+//                                width: 100%
+//                                min-height: 60px
+//                                //max-height: 60px
+//                                //height: 61px
+//                                border: 1px solid black
+//                            .Active-Box
+//                                background: #339999
+//                                background: $blogColor
+//                            .Inactive-Box
+//                                background: #006666
+//                                background: $inActiveColor
+//                            .Hover-Box
+//                                background: #669999
+//                                background: $hoverColor
+//                .Blog-Box
+//                    background: #339999
+//                    background: $blogColor
+//                    //height: 100%
+//                    .Blog-Title
+//                        font-size: 24px
+//                        color: $textColor
+//                    .Blog-Text
+//                        font-size: 14px
+//                        line-height: 35px
+//                        color: $textColor
+//
+//
+//.Credits
+//    font-size: 14px
+//    color: $textColor
+//
+//.Titles
+//    font-size: 16px
+//    color: $textColor
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//.Blog-Text-Box
+//    border: 1px Solid rgba(255, 255, 255, 1)
+//    width: 970px
+//    height: 580px
+//
+//.Scroll-right-inner
+//    background: rgba(255, 255, 255, 1)
+//    width: 5px
+//    height: 100px
+//
+//.Active-Indicator
+//    background: rgba(255, 255, 255, 1)
+//    width: 15px
+//    height: 60px

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sample</title>
+    <link rel="stylesheet" href="../libraries/normalize.css">
+    <link rel="stylesheet" href="sampleStyle.css">
+    <link rel="stylesheet" href="respSample.css">
+</head>
+<body>
+<div id="blog">
+    <main class="top">
+        <section class="Background row">
+            <aside class="Side-Bar column _20">
+                <div class="Heading">
+                    <div class="HeadingStuff">
+                        <div class="Name">Sphoorthy L A's</div>
+                        <div class="Blog">Blog</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="right">
+                        <blog-tab v-for="blog in blogs" :blog="blog" :key="blog.id"
+                                  v-on:set-title="setTitle(blog.id)"></blog-tab>
+                        <!--<div class="Active-Box">Active</div>-->
+                        <!--<div class="Inactive-Box">Inactive</div>-->
+                        <!--<div class="Hover-Box">Hover</div>-->
+                    </div>
+                </div>
+            </aside>
+            <article class="Blog-Box column _80">
+                <div class="container">
+                    <div class="Blog-Title"> {{ selected.title }}</div>
+                    <div class="Blog-Text-Container">
+                        <div class="Blog-Text"> {{ selected.text }}</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+
+<script src="../libraries/vue.js"></script>
+<script src="sampleScript.js"></script>
+</body>
+</html>

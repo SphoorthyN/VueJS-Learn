@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="Blog/sample.html">Go</a>
+<div id="blog-post">
+
+    <h4>PASSING DATA  TO CHILD COMPONENTS</h4>
+    <div :style="{ fontSize : postFontSize + 'em'}">
+        <blog-post v-for="post in posts" :post="post" :key="post.id" v-on:enlarge="postFontSize += $event"></blog-post>
+    </div>
+    <br>
+    <hr>
+
+    <h4>USING V-MODEL WITH COMPONENTS</h4>
+    <custom-input v-model="customInput"></custom-input>
+    <p>{{ customInput }}</p>
+    <br>
+    <hr>
+
+    <h4>CONTENT DIST. WITH SLOTS</h4>
+    <alert-box></alert-box>
+
+    <br>
+    <hr>
+    <h4>DYNAMIC COMPONENTS</h4>
+
+
+</div>
+
+<!--<div id="app">-->
+<!--<hr>-->
+<!--<h3> BIND</h3>-->
+<!--<span v-bind:title="title">{{ message }}</span>-->
+
+<!--<hr>-->
+<!--<h3> IF</h3>-->
+<!--<div v-if="seen">NOw you see</div>-->
+
+<!--<hr>-->
+<!--<h3> FOR</h3>-->
+<!--<div v-for="x in X">-->
+<!--{{ x }}-->
+<!--</div>-->
+
+<!--<hr>-->
+<!--<h3> DATA VARIABLE</h3>-->
+<!--<p>{{ message }}</p>-->
+
+<!--<hr>-->
+<!--<h3> ON</h3>-->
+<!--<button v-on:click="rev">reverse</button>-->
+
+<!--<hr>-->
+<!--<h3> IF in TEMPLATE with ELSE</h3>-->
+<!--<template v-if="ok">-->
+<!--<p v-bind:style="style">Data binding example : {{ message }}</p>-->
+<!--<p>Reversed message using computed property: {{ fullName }}</p>-->
+<!--</template>-->
+<!--<template v-else>-->
+<!--<p v-bind:style="style">Data binding example  ELSE EXAMPLE: {{ message }}</p>-->
+<!--<p>Reversed message using computed property ELSE EXAMPLE: {{ fullName }}</p>-->
+<!--</template>-->
+
+<!--<hr>-->
+<!--<h3> MODEL 2-WAY BINDING</h3>-->
+<!--<input type="text" v-model="message">-->
+
+<!--<hr>-->
+<!--<h3> COMPONENTS</h3>-->
+<!--<ol>-->
+<!--<comp v-for="item in list" v-bind:todo="item" v-bind:key="item.id"></comp>-->
+<!--</ol>-->
+<!--<ol>-->
+<!--<li v-for="(a,b) in style">-->
+<!--Property Name : {{ a }} Name : {{ b }}-->
+<!--</li>-->
+<!--</ol>-->
+
+<!--<hr>-->
+<!--<h3>LISTENING</h3>-->
+<!--<p>The Count : {{ count }}</p>-->
+<!--<button @click="count++" >Add 1</button>-->
+<!--<button @click="warn('You\'re out', $event)" >X</button>-->
+
+<!--<hr>-->
+<!--<h3>FORM INPUT BINDING</h3>-->
+<!--<input type="checkbox" v-model="checked" id="check">-->
+<!--<label for="check" v-if="checked"></label>-->
+<!--<p>{{ checked }}</p>-->
+<!--<hr>-->
+<!--<h3>MULTIPLE CHECKBOXES BOUND TO AN ARRAY</h3>-->
+<!--<input type="checkbox" id="jack" value="jack" v-model="checkedNames">-->
+<!--<label for="jack">Jack</label>-->
+<!--<input type="checkbox" id="jac" value="jac" v-model="checkedNames">-->
+<!--<label for="jac">jac</label>-->
+<!--<input type="checkbox" id="ja" value="ja" v-model="checkedNames">-->
+<!--<label for="ja">ja</label>-->
+<!--<p>{{ checkedNames }}</p>-->
+
+<!--<hr>-->
+<!--<h3>RADIO INPUT BINDING</h3>-->
+<!--<input type="radio" id="one" value="One" v-model="radio">-->
+<!--<label for="one">One</label>-->
+<!--<input type="radio" id="two" value="Two" v-model="radio">-->
+<!--<label for="two">Two</label>-->
+<!--<p>{{ radio }}</p>-->
+
+<!--<hr>-->
+<!--<h3>SELECT INPUT BINDING</h3>-->
+<!--<select name="" id="select" v-model="select">-->
+<!--<option disabled >Please choose one</option>-->
+<!--<option value="A">A</option>-->
+<!--<option value="B">B</option>-->
+<!--<option value="C">C</option>-->
+<!--</select>-->
+<!--<p>{{ select }}</p>-->
+
+<!--<hr>-->
+<!--<h3>MULTIPLE SELECT</h3>-->
+<!--<select name="" id="selected" v-model="selected" multiple>-->
+<!--<option disabled >Please choose one</option>-->
+<!--<option value="A">A</option>-->
+<!--<option value="B">B</option>-->
+<!--<option value="C">C</option>-->
+<!--</select>-->
+<!--<p>{{ selected }}</p>-->
+
+<!--<hr>-->
+<!--<h3>DYNAMIC OPTIONS WITH V-FOR</h3>-->
+<!--<select name="" id="" v-model="selectedDynamic">-->
+<!--<option v-bind:value="option.value" v-for="option in options">{{ option.text }}</option>-->
+<!--</select>-->
+<!--<p>{{ selectedDynamic }}</p>-->
+
+<!--<hr>-->
+<!--<h3>VALUE BINDINGS</h3>-->
+<!--<h4>CHECKBOX</h4>-->
+<!--<input type="checkbox" v-model="checkV" true-value="Yo">-->
+<!--<p>{{ checkV }}</p>-->
+
+<!--<h4>RADIO</h4>-->
+<!--<input type="radio" name="radioV" v-model="radioV" v-bind:value="radioVopt.false">-->
+<!--<input type="radio" name="radioV" v-model="radioV" v-bind:value="radioVopt.true">-->
+<!--<p>{{ radioV }}</p>-->
+
+<!--<hr>-->
+<!--<h3>MODIFIERS</h3>-->
+<!--<h4>LAZY</h4>-->
+<!--<input type="text" v-model.lazy="textInputLazy">-->
+<!--<p>{{ textInputLazy }}</p>-->
+
+<!--<h4>NUMBER</h4>-->
+<!--<input type="number" v-model.number="numberInput">-->
+<!--<li>{{ numberInput }}</li>-->
+<!--<li> {{ typeof numberInput }} </li>-->
+
+<!--<h4>TRIM</h4>-->
+<!--<input type="text" v-model.trim="textInputTrim">-->
+<!--<p>{{ textInputTrim }}</p>-->
+
+<!--<br>-->
+<!--<hr>-->
+<!--<hr>-->
+<!--<hr>-->
+<!--<h3>COMPONENTS FOR REAL</h3>-->
+<!--<h4>Basic Template with template, data</h4>-->
+<!--<btn-counter></btn-counter>-->
+
+<!--<h4>Basic Templates with template, props</h4>-->
+<!--<blog-header title="Post One" ></blog-header>-->
+<!--<blog-header title="Post Two" ></blog-header>-->
+<!--<blog-header title="Post Three" ></blog-header>-->
+<!--</div>-->
+
+
+<script src="libraries/vue.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+

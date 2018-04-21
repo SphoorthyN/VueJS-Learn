@@ -1,0 +1,97 @@
+@charset "utf-8";
+.Name {
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    line-height: 33px;
+    color: rgb(255, 255, 255);
+}
+
+.Blog-Title {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.BlogText {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.Credits {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.Titles {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.Blog {
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+.Scroll-Left-In {
+    background: rgba(255, 255, 255, 1);
+    width: 5px;
+    height: 100px;
+}
+
+.Inactive-Box {
+    background: #006666;
+    background: rgba(0, 102, 102, 1);
+    width: 260px;
+    height: 60px;
+}
+
+.Active-Box {
+    background: #339999;
+    background: rgba(51, 153, 153, 1);
+    width: 260px;
+    height: 60px;
+}
+
+.Hover-Box {
+    background: #669999;
+    background: rgba(102, 153, 153, 1);
+    width: 260px;
+    height: 60px;
+}
+
+.Blog-Text-Box {
+    border: 1px Solid rgba(255, 255, 255, 1);
+    width: 970px;
+    height: 580px;
+}
+
+.Blog-Box {
+    background: #339999;
+    background: rgba(51, 153, 153, 1);
+    width: 1106px;
+    height: 718px;
+}
+
+.Background {
+    background: #006666;
+    background: rgba(0, 102, 102, 1);
+    width: 1366px;
+    height: 768px;
+}
+
+.Scroll-right-inner {
+    background: rgba(255, 255, 255, 1);
+    width: 5px;
+    height: 100px;
+}
+
+.Active-Indicator {
+    background: rgba(255, 255, 255, 1);
+    width: 15px;
+    height: 60px;
+}

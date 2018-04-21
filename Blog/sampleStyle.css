@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400");
+html {
+  height: 100%;
+  box-sizing: border-box; }
+  html body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+    color: white; }
+    html body ::-webkit-scrollbar {
+      width: 5px;
+      height: 100px;
+      direction: rtl; }
+    html body ::-webkit-scrollbar-thumb {
+      background: white; }
+    html body #blog {
+      width: 100%;
+      height: 100%; }
+      html body #blog .Background {
+        width: 100%;
+        height: 100%;
+        display: flex; }
+        html body #blog .Background .Side-Bar {
+          background: #339999;
+          display: flex;
+          flex-direction: column; }
+          html body #blog .Background .Side-Bar .Heading {
+            background: #006666;
+            flex: 1;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            padding-right: 15px;
+            min-width: 250px;
+            flex-direction: column; }
+            html body #blog .Background .Side-Bar .Heading .HeadingStuff {
+              display: flex;
+              align-items: flex-end;
+              flex-direction: column; }
+          html body #blog .Background .Side-Bar .list {
+            flex: 4;
+            width: 100%;
+            background: #339999; }
+            html body #blog .Background .Side-Bar .list .right {
+              display: flex;
+              overflow: auto;
+              flex-direction: column;
+              width: 100%;
+              background: #339999;
+              margin: 5px 0; }
+              html body #blog .Background .Side-Bar .list .right .blog-tab {
+                min-height: fit-content;
+                margin-bottom: 1px;
+                background: #006666;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 15px 0;
+                justify-content: space-around; }
+                html body #blog .Background .Side-Bar .list .right .blog-tab .Blog {
+                  display: flex;
+                  width: 100%;
+                  height: 100%; }
+                  html body #blog .Background .Side-Bar .list .right .blog-tab .Blog .title {
+                    font-size: 1em;
+                    flex-wrap: wrap;
+                    display: flex;
+                    align-self: flex-start; }
+                  html body #blog .Background .Side-Bar .list .right .blog-tab .Blog .author {
+                    font-size: 0.8em; }
+        html body #blog .Background .Blog-Box {
+          background: #339999;
+          display: flex;
+          overflow: auto; }
+          html body #blog .Background .Blog-Box .container {
+            display: flex;
+            flex-direction: column; }
+            html body #blog .Background .Blog-Box .container .Blog-Title {
+              font-size: 2em;
+              margin: 30px 0; }
+            html body #blog .Background .Blog-Box .container .Blog-Text-Container {
+              display: flex;
+              overflow: auto;
+              padding-right: 50px; }
+              html body #blog .Background .Blog-Box .container .Blog-Text-Container .Blog-Text {
+                font-size: 1em;
+                display: flex; }
+
+/*# sourceMappingURL=sampleStyle.css.map */

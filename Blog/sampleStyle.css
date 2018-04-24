@@ -83,8 +83,7 @@ html {
             html body #blog .Background .Blog-Box .container .Blog-Text-Container {
               margin-bottom: 5px;
               display: flex;
-              overflow: auto;
-              padding-right: 180px; }
+              overflow: auto; }
               html body #blog .Background .Blog-Box .container .Blog-Text-Container .Blog-Text {
                 font-size: 1em;
                 display: flex; }

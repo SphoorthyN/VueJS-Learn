@@ -13,11 +13,17 @@ html {
       height: 100%; }
     html body .container {
       max-width: 500px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 0 10px; }
+      html body .container .Blog-Text-Container {
+        padding-right: 20px;
+        font-size: 14px; }
     html body .list {
       display: none; }
     html body .Heading {
-      height: 100px;
+      height: 80px;
+      min-height: 80px;
+      padding: 10px 0;
       flex: none;
       margin: 0;
       align-items: center; }
@@ -27,19 +33,32 @@ html {
       flex: 1; }
     html body .Background {
       flex-direction: column; }
+    @media screen and (max-height: 493px) {
+      html body .Blog-Box {
+        margin-top: 30px; }
+        html body .Blog-Box .Blog-Title {
+          margin-top: 10px; } }
+    @media screen and (min-width: 768px) {
+      html body .container {
+        max-width: 720px; } }
     @media screen and (min-width: 700px) {
       html body .container {
-        max-width: 600px;
-        margin: 0 auto; } }
-    @media screen and (min-width: 1050px) {
+        max-width: 650px; }
+        html body .container .Blog-Text-Container {
+          padding-right: 100px; } }
+    @media screen and (min-width: 1024px) {
       html body .Background {
         flex-direction: row; }
+      html body .Blog-Box {
+        margin: 0; }
       html body .column {
         flex: 1; }
       html body .container {
         max-width: 750px; }
       html body .Heading {
         height: 0;
+        padding: 0;
+        margin-bottom: 10px;
         margin-right: 5px;
         flex: 1;
         align-items: flex-end; }
